@@ -14,7 +14,15 @@
 * 在命令行按住Ctrl+C,程序退出会清除data文件夹以及该文件夹里面的所有内容
 
 
- # 使用说明
+# 使用说明
+ * 直接下载file-task-1.0-SNAPSHOT.jar到本地，执行如下命令行
+    * java -jar file-task-1.0-SNAPSHOT.jar
+ 
+
+# 注意事项
+* 执行file-task-1.0-SNAPSHOT.jar 需要安装jdk1.8及以上版本
+* 如果在windows下执行出现日志乱码情况，请修改日志配置文件logback.xml中charset=GBK
+
  
 
 
