@@ -25,8 +25,8 @@
 * 执行file-task-1.0-SNAPSHOT.jar 需要安装jdk1.8及以上版本
 * 如果在windows下执行出现日志乱码情况，请修改日志配置文件logback.xml中charset=GBK
 * 如果出现编译不通过异常，需要安装lombok插件
-
- 
+   * [IDEA 安装lombok插件](https://blog.csdn.net/tiantiandjava/article/details/78621782)
+   * [Eclipse 安装lombok插件](https://blog.csdn.net/qq_25646191/article/details/79639633)
 
 
 
