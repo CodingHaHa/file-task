@@ -15,7 +15,7 @@
 
 
 # 使用说明
- * 直接下载file-task-1.0-SNAPSHOT.jar到本地，执行如下命令行
+ * [下载file-task-1.0-SNAPSHOT.jar](https://raw.githubusercontent.com/CodingHaHa/file-task/master/file-task-1.0-SNAPSHOT.jar)到本地，执行如下命令行
     * java -jar file-task-1.0-SNAPSHOT.jar
  * 定时任务调度策略配置在application.properties文件中，配置内容为cron 表达式；默认配置为每10秒钟执行一次；可根据具体需求进行更改
     * 例如，每天早上8点到10点每10秒钟执行一次：*/10 * 8-10 * * ? 
