@@ -23,7 +23,7 @@ public class MyStartupRunner implements CommandLineRunner {
         if(!newDatadir.exists()){
             newDatadir.mkdirs();
         }
-        File taskDatadir = new File(basePath+File.separator+FileConstants.DIR_task_DATA);
+        File taskDatadir = new File(basePath+File.separator+FileConstants.DATA_TASK_DATA);
         if(!taskDatadir.exists()){
             taskDatadir.mkdirs();
         }

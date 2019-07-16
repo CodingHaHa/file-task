@@ -49,7 +49,7 @@ public class FtpServiceImpl implements FtpService {
   @Override
   public List<String> listRecoredHandledFileName(String recordFileName) {
     try (BufferedReader fileReader = new BufferedReader(new FileReader(
-        FileConstants.BASE_PATH + FileConstants.PATH_SEPARATOR + FileConstants.DIR_task_DATA
+        FileConstants.BASE_PATH + FileConstants.PATH_SEPARATOR + FileConstants.DATA_TASK_DATA
             + FileConstants.PATH_SEPARATOR + recordFileName))) {
       return fileReader.lines().filter(line -> !StringUtils.isEmpty(line.trim()))
           .collect(Collectors.toList());

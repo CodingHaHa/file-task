@@ -12,7 +12,7 @@ public class FileConstants {
   private FileConstants(){}
 
   public static final String DIR_NEW_DATA = "data/new-data";
-  public static final String DIR_task_DATA = "data/task-data";
+  public static final String DATA_TASK_DATA = "data/task-data";
   public static final String FILE_TASK_DATA_HANDLE_ERR_FILE = "data/task-data/handle-err-file.txt";
   public static final String FILE_TASK_DATA_HANDLE_SUCCESS_FILE = "data/task-data/handle-success-file.txt";
   public static final String FILE_TASK_DATA_JOB_EXECUTE_RESULT = "data/task-data/job-execute-result.txt";

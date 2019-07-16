@@ -83,7 +83,8 @@ public class FileJobSupport {
      * @param fileName
      */
     public synchronized void recordHandleSuccessFileName(String fileName){
-        try(FileWriter fileWriter = new FileWriter(FileConstants.BASE_PATH + FileConstants.PATH_SEPARATOR + FileConstants.DIR_task_DATA+FileConstants.PATH_SEPARATOR + FileConstants.TASK_DATA_HANDLE_SUCCESS_FILE,true)) {
+        try(FileWriter fileWriter = new FileWriter(FileConstants.BASE_PATH + FileConstants.PATH_SEPARATOR + FileConstants.DATA_TASK_DATA
+            +FileConstants.PATH_SEPARATOR + FileConstants.TASK_DATA_HANDLE_SUCCESS_FILE,true)) {
             fileWriter.write(fileName+'\n');
         } catch (IOException e) {
             log.error("添加处理成功文件记录失败：{}",e.getMessage());
@@ -93,7 +94,8 @@ public class FileJobSupport {
 
 
     public synchronized void recordHandleErrFileName(String fileName){
-        try(FileWriter fileWriter = new FileWriter(FileConstants.BASE_PATH + FileConstants.PATH_SEPARATOR + FileConstants.DIR_task_DATA + FileConstants.PATH_SEPARATOR + FileConstants.TASK_DATA_HANDLE_ERR_FILE,true)) {
+        try(FileWriter fileWriter = new FileWriter(FileConstants.BASE_PATH + FileConstants.PATH_SEPARATOR + FileConstants.DATA_TASK_DATA
+            + FileConstants.PATH_SEPARATOR + FileConstants.TASK_DATA_HANDLE_ERR_FILE,true)) {
             fileWriter.write(fileName+'\n');
         } catch (IOException e) {
             log.error("添加处理失败文件记录失败：{}",e.getMessage());
@@ -103,7 +105,8 @@ public class FileJobSupport {
 
 
     public synchronized void recordExecuteResult(JobExecuteResult jobExecuteResult){
-        try(FileWriter fileWriter = new FileWriter(FileConstants.BASE_PATH + FileConstants.PATH_SEPARATOR + FileConstants.DIR_task_DATA+ FileConstants.PATH_SEPARATOR + FileConstants.TASK_DATA_JOB_EXECUTE_RESULT,true)) {
+        try(FileWriter fileWriter = new FileWriter(FileConstants.BASE_PATH + FileConstants.PATH_SEPARATOR + FileConstants.DATA_TASK_DATA
+            + FileConstants.PATH_SEPARATOR + FileConstants.TASK_DATA_JOB_EXECUTE_RESULT,true)) {
             fileWriter.write(jobExecuteResult.getStrInfo()+'\n');
         } catch (IOException e) {
             log.error("添加定时器执行结果文件记录失败：{}",e.getMessage());
